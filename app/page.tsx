@@ -20,7 +20,7 @@ declare global {
   }
 }
 
-const API_BASE_URL = "http://localhost:8000/api/v1"
+const API_BASE_URL = "https://backend-devmode.up.railway.app/api/v1"
 const GOOGLE_CLIENT_ID = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID || "your-google-client-id"
 
 export default function Home() {
