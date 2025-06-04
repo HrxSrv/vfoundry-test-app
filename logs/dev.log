@@ -1,0 +1,175 @@
+2025-06-03 21:06:46 | INFO     | src.middleware:log_requests:9 - Request: GET http://localhost:8000/users
+2025-06-03 21:06:46 | INFO     | src.middleware:log_requests:14 - Response: 404 - 0.0328s
+2025-06-03 21:06:48 | INFO     | src.middleware:log_requests:9 - Request: GET http://localhost:8000/favicon.ico
+2025-06-03 21:06:48 | INFO     | src.middleware:log_requests:14 - Response: 404 - 0.0069s
+2025-06-03 21:07:14 | INFO     | src.middleware:log_requests:9 - Request: GET http://localhost:8000/health
+2025-06-03 21:07:14 | INFO     | src.middleware:log_requests:14 - Response: 404 - 0.0000s
+2025-06-03 21:07:34 | INFO     | src.middleware:log_requests:9 - Request: GET http://localhost:8000//users/1
+2025-06-03 21:07:34 | INFO     | src.middleware:log_requests:14 - Response: 404 - 0.0016s
+2025-06-03 21:07:39 | INFO     | src.middleware:log_requests:9 - Request: GET http://localhost:8000/users/1
+2025-06-03 21:07:39 | INFO     | src.middleware:log_requests:14 - Response: 404 - 0.0023s
+2025-06-03 21:08:05 | INFO     | src.middleware:log_requests:9 - Request: GET http://localhost:8000/users/user_123
+2025-06-03 21:08:05 | INFO     | src.middleware:log_requests:14 - Response: 404 - 0.0040s
+2025-06-03 21:11:59 | INFO     | src.middleware:log_requests:9 - Request: GET http://localhost:8000/users/"user_123"
+2025-06-03 21:11:59 | INFO     | src.middleware:log_requests:14 - Response: 404 - 0.0000s
+2025-06-03 21:13:23 | INFO     | src.middleware:log_requests:9 - Request: GET http://localhost:8000/users/user_123
+2025-06-03 21:13:23 | INFO     | src.middleware:log_requests:14 - Response: 404 - 0.0028s
+2025-06-03 23:46:02 | INFO     | app.core.middleware:log_requests:9 - Request: GET http://localhost:8000/api/v1/health
+2025-06-03 23:46:02 | INFO     | app.routes:health_check:11 - Health check requested
+2025-06-03 23:46:03 | INFO     | app.core.middleware:log_requests:14 - Response: 200 - 0.8158s
+2025-06-03 23:46:24 | INFO     | app.core.middleware:log_requests:9 - Request: GET http://localhost:8000/api/v1/users/user_123
+2025-06-03 23:46:24 | INFO     | app.routes:get_user:35 - Fetching user: user_123
+2025-06-03 23:46:24 | INFO     | app.core.middleware:log_requests:14 - Response: 200 - 0.0000s
+2025-06-04 00:32:06 | INFO     | app.main:startup_event:44 - Connecting to MongoDB...
+2025-06-04 00:32:07 | INFO     | app.main:startup_event:46 - Connected to MongoDB
+2025-06-04 00:44:36 | INFO     | app.core.middleware:log_requests:10 - Request: GET http://localhost:8000/users/user_123
+2025-06-04 00:44:36 | INFO     | app.core.middleware:log_requests:15 - Response: 404 - 0.0303s
+2025-06-04 00:48:28 | INFO     | app.main:shutdown_event:50 - Closing MongoDB connection...
+2025-06-04 00:48:28 | INFO     | app.main:shutdown_event:52 - MongoDB connection closed
+2025-06-04 01:33:10 | INFO     | app.main:startup_event:44 - Connecting to MongoDB...
+2025-06-04 01:33:12 | INFO     | app.main:startup_event:46 - Connected to MongoDB
+2025-06-04 01:35:12 | INFO     | app.core.middleware:log_requests:10 - Request: GET http://localhost:8000/api/v1/google/login
+2025-06-04 01:35:12 | INFO     | app.core.middleware:log_requests:15 - Response: 404 - 0.0045s
+2025-06-04 01:35:15 | INFO     | app.core.middleware:log_requests:10 - Request: GET http://localhost:8000/favicon.ico
+2025-06-04 01:35:15 | INFO     | app.core.middleware:log_requests:15 - Response: 404 - 0.0025s
+2025-06-04 01:35:35 | INFO     | app.core.middleware:log_requests:10 - Request: GET http://localhost:8000/api/v1/auth/google/login
+2025-06-04 01:35:35 | INFO     | app.core.middleware:log_requests:15 - Response: 404 - 0.0030s
+2025-06-04 01:37:12 | INFO     | app.core.middleware:log_requests:10 - Request: GET http://localhost:8000/api/v1/auth/google/login
+2025-06-04 01:37:12 | INFO     | app.core.middleware:log_requests:15 - Response: 404 - 0.0111s
+2025-06-04 01:38:48 | INFO     | app.main:shutdown_event:50 - Closing MongoDB connection...
+2025-06-04 01:38:48 | INFO     | app.main:shutdown_event:52 - MongoDB connection closed
+2025-06-04 01:50:07 | INFO     | app.main:startup_event:44 - Connecting to MongoDB...
+2025-06-04 01:50:08 | INFO     | app.main:startup_event:46 - Connected to MongoDB
+2025-06-04 01:50:43 | INFO     | app.core.middleware:log_requests:10 - Request: GET http://localhost:8000/api/v1/auth/google/login
+2025-06-04 01:50:43 | INFO     | app.core.middleware:log_requests:15 - Response: 200 - 0.0030s
+2025-06-04 01:54:01 | INFO     | app.core.middleware:log_requests:10 - Request: GET http://localhost:8000/api/v1/auth/google/login
+2025-06-04 01:54:01 | INFO     | app.core.middleware:log_requests:15 - Response: 200 - 0.0487s
+2025-06-04 02:04:23 | INFO     | app.core.middleware:log_requests:10 - Request: OPTIONS http://localhost:8000/api/v1/auth/google
+2025-06-04 02:04:23 | INFO     | app.core.middleware:log_requests:15 - Response: 200 - 0.0617s
+2025-06-04 02:04:23 | INFO     | app.core.middleware:log_requests:10 - Request: POST http://localhost:8000/api/v1/auth/google
+2025-06-04 02:04:23 | INFO     | app.core.middleware:log_requests:15 - Response: 404 - 0.0319s
+2025-06-04 02:05:22 | INFO     | app.core.middleware:log_requests:10 - Request: POST http://localhost:8000/api/v1/auth/google
+2025-06-04 02:05:22 | INFO     | app.core.middleware:log_requests:15 - Response: 404 - 0.0036s
+2025-06-04 02:47:33 | INFO     | app.core.middleware:log_requests:10 - Request: GET http://localhost:8000/api/v1/auth/google/login
+2025-06-04 02:47:33 | INFO     | app.core.middleware:log_requests:15 - Response: 200 - 0.1108s
+2025-06-04 02:48:11 | INFO     | app.core.middleware:log_requests:10 - Request: GET http://localhost:8000/api/v1/auth/google/login
+2025-06-04 02:48:11 | INFO     | app.core.middleware:log_requests:15 - Response: 200 - 0.0188s
+2025-06-04 02:48:51 | INFO     | app.core.middleware:log_requests:10 - Request: GET http://localhost:8000/api/v1/auth/google/login
+2025-06-04 02:48:51 | INFO     | app.core.middleware:log_requests:15 - Response: 200 - 0.1294s
+2025-06-04 02:51:29 | INFO     | app.core.middleware:log_requests:10 - Request: GET http://localhost:8000/api/v1/auth/google/login
+2025-06-04 02:51:29 | INFO     | app.core.middleware:log_requests:15 - Response: 200 - 0.0660s
+2025-06-04 02:55:00 | INFO     | app.core.middleware:log_requests:10 - Request: GET http://localhost:8000/api/v1/auth/google/login
+2025-06-04 02:55:00 | INFO     | app.core.middleware:log_requests:15 - Response: 200 - 0.0537s
+2025-06-04 02:55:41 | INFO     | app.core.middleware:log_requests:10 - Request: GET http://localhost:8000/api/v1/auth/google/login
+2025-06-04 02:55:41 | INFO     | app.core.middleware:log_requests:15 - Response: 200 - 0.0211s
+2025-06-04 02:56:53 | INFO     | app.core.middleware:log_requests:10 - Request: GET http://localhost:8000/api/v1/auth/google/login
+2025-06-04 02:56:54 | INFO     | app.core.middleware:log_requests:15 - Response: 200 - 1.0204s
+2025-06-04 02:58:50 | INFO     | app.core.middleware:log_requests:10 - Request: GET http://localhost:8000/api/v1/auth/google/login
+2025-06-04 02:58:50 | INFO     | app.core.middleware:log_requests:15 - Response: 200 - 0.0630s
+2025-06-04 02:59:57 | INFO     | app.core.middleware:log_requests:10 - Request: GET http://localhost:8000/api/v1/auth/google/login
+2025-06-04 02:59:57 | INFO     | app.core.middleware:log_requests:15 - Response: 200 - 0.0056s
+2025-06-04 03:01:39 | INFO     | app.core.middleware:log_requests:10 - Request: OPTIONS http://localhost:8000/api/v1/auth/google
+2025-06-04 03:01:39 | INFO     | app.core.middleware:log_requests:15 - Response: 200 - 0.0117s
+2025-06-04 03:01:39 | INFO     | app.core.middleware:log_requests:10 - Request: POST http://localhost:8000/api/v1/auth/google
+2025-06-04 03:01:39 | INFO     | app.core.middleware:log_requests:15 - Response: 404 - 0.0089s
+2025-06-04 03:06:13 | INFO     | app.core.middleware:log_requests:10 - Request: GET http://localhost:8000/api/v1/auth/google/login
+2025-06-04 03:06:13 | INFO     | app.core.middleware:log_requests:15 - Response: 200 - 0.0552s
+2025-06-04 03:06:34 | INFO     | app.core.middleware:log_requests:10 - Request: GET http://localhost:8000/api/v1/auth/google/login
+2025-06-04 03:06:34 | INFO     | app.core.middleware:log_requests:15 - Response: 200 - 0.0030s
+2025-06-04 03:07:53 | INFO     | app.core.middleware:log_requests:10 - Request: GET http://localhost:8000/api/v1/auth/google/login
+2025-06-04 03:07:53 | INFO     | app.core.middleware:log_requests:15 - Response: 200 - 0.0140s
+2025-06-04 03:07:53 | INFO     | app.core.middleware:log_requests:10 - Request: GET http://localhost:8000/.well-known/appspecific/com.chrome.devtools.json
+2025-06-04 03:07:53 | INFO     | app.core.middleware:log_requests:15 - Response: 404 - 0.0833s
+2025-06-04 03:16:07 | INFO     | app.main:shutdown_event:50 - Closing MongoDB connection...
+2025-06-04 03:16:07 | INFO     | app.main:shutdown_event:52 - MongoDB connection closed
+2025-06-04 03:16:27 | INFO     | app.main:startup_event:44 - Connecting to MongoDB...
+2025-06-04 03:16:27 | INFO     | app.main:startup_event:46 - Connected to MongoDB
+2025-06-04 03:16:27 | INFO     | app.main:shutdown_event:50 - Closing MongoDB connection...
+2025-06-04 03:16:27 | INFO     | app.main:shutdown_event:52 - MongoDB connection closed
+2025-06-04 03:16:30 | INFO     | app.main:startup_event:44 - Connecting to MongoDB...
+2025-06-04 03:16:30 | INFO     | app.main:startup_event:46 - Connected to MongoDB
+2025-06-04 03:16:34 | INFO     | app.main:shutdown_event:50 - Closing MongoDB connection...
+2025-06-04 03:16:34 | INFO     | app.main:shutdown_event:52 - MongoDB connection closed
+2025-06-04 03:16:37 | INFO     | app.main:startup_event:44 - Connecting to MongoDB...
+2025-06-04 03:16:37 | INFO     | app.main:startup_event:46 - Connected to MongoDB
+2025-06-04 03:16:53 | INFO     | app.main:shutdown_event:50 - Closing MongoDB connection...
+2025-06-04 03:16:53 | INFO     | app.main:shutdown_event:52 - MongoDB connection closed
+2025-06-04 03:17:04 | INFO     | app.main:startup_event:44 - Connecting to MongoDB...
+2025-06-04 03:17:05 | INFO     | app.main:startup_event:46 - Connected to MongoDB
+2025-06-04 03:17:05 | INFO     | app.main:shutdown_event:50 - Closing MongoDB connection...
+2025-06-04 03:17:05 | INFO     | app.main:shutdown_event:52 - MongoDB connection closed
+2025-06-04 03:17:10 | INFO     | app.main:startup_event:44 - Connecting to MongoDB...
+2025-06-04 03:17:10 | INFO     | app.main:startup_event:46 - Connected to MongoDB
+2025-06-04 07:03:45 | INFO     | app.core.middleware:log_requests:10 - Request: GET http://localhost:8000/api/v1/auth/google/login
+2025-06-04 07:03:45 | INFO     | app.core.middleware:log_requests:15 - Response: 200 - 0.1383s
+2025-06-04 07:07:17 | INFO     | app.main:shutdown_event:50 - Closing MongoDB connection...
+2025-06-04 07:07:17 | INFO     | app.main:shutdown_event:52 - MongoDB connection closed
+2025-06-04 07:10:38 | INFO     | app.main:startup_event:44 - Connecting to MongoDB...
+2025-06-04 07:10:44 | INFO     | app.main:startup_event:46 - Connected to MongoDB
+2025-06-04 07:10:44 | INFO     | app.main:shutdown_event:50 - Closing MongoDB connection...
+2025-06-04 07:10:44 | INFO     | app.main:shutdown_event:52 - MongoDB connection closed
+2025-06-04 07:12:52 | INFO     | app.main:startup_event:44 - Connecting to MongoDB...
+2025-06-04 07:12:52 | INFO     | app.main:startup_event:46 - Connected to MongoDB
+2025-06-04 07:12:52 | INFO     | app.main:shutdown_event:50 - Closing MongoDB connection...
+2025-06-04 07:12:52 | INFO     | app.main:shutdown_event:52 - MongoDB connection closed
+2025-06-04 07:13:37 | INFO     | app.main:startup_event:44 - Connecting to MongoDB...
+2025-06-04 07:13:38 | INFO     | app.main:startup_event:46 - Connected to MongoDB
+2025-06-04 07:13:38 | INFO     | app.main:shutdown_event:50 - Closing MongoDB connection...
+2025-06-04 07:13:38 | INFO     | app.main:shutdown_event:52 - MongoDB connection closed
+2025-06-04 07:25:29 | INFO     | app.main:startup_event:44 - Connecting to MongoDB...
+2025-06-04 07:25:29 | INFO     | app.main:startup_event:46 - Connected to MongoDB
+2025-06-04 07:25:29 | INFO     | app.main:shutdown_event:50 - Closing MongoDB connection...
+2025-06-04 07:25:29 | INFO     | app.main:shutdown_event:52 - MongoDB connection closed
+2025-06-04 07:26:41 | INFO     | app.main:startup_event:44 - Connecting to MongoDB...
+2025-06-04 07:26:41 | INFO     | app.main:startup_event:46 - Connected to MongoDB
+2025-06-04 12:27:50 | INFO     | app.main:shutdown_event:50 - Closing MongoDB connection...
+2025-06-04 12:27:50 | INFO     | app.main:shutdown_event:52 - MongoDB connection closed
+2025-06-04 13:27:59 | INFO     | app.main:startup_event:44 - Connecting to MongoDB...
+2025-06-04 13:28:03 | INFO     | app.main:startup_event:46 - Connected to MongoDB
+2025-06-04 13:45:55 | INFO     | app.main:shutdown_event:50 - Closing MongoDB connection...
+2025-06-04 13:45:55 | INFO     | app.main:shutdown_event:52 - MongoDB connection closed
+2025-06-04 13:59:37 | INFO     | app.main:startup_event:44 - Connecting to MongoDB...
+2025-06-04 13:59:40 | INFO     | app.main:startup_event:46 - Connected to MongoDB
+2025-06-04 14:00:55 | INFO     | app.main:shutdown_event:50 - Closing MongoDB connection...
+2025-06-04 14:00:55 | INFO     | app.main:shutdown_event:52 - MongoDB connection closed
+2025-06-04 14:03:28 | INFO     | app.main:startup_event:44 - Connecting to MongoDB...
+2025-06-04 14:03:32 | INFO     | app.main:startup_event:46 - Connected to MongoDB
+2025-06-04 14:07:15 | INFO     | app.main:shutdown_event:50 - Closing MongoDB connection...
+2025-06-04 14:07:15 | INFO     | app.main:shutdown_event:52 - MongoDB connection closed
+2025-06-04 14:08:27 | INFO     | app.main:startup_event:44 - Connecting to MongoDB...
+2025-06-04 14:08:30 | INFO     | app.main:startup_event:46 - Connected to MongoDB
+2025-06-04 14:09:37 | INFO     | app.core.middleware:log_requests:10 - Request: GET http://localhost:8000/docs
+2025-06-04 14:09:37 | INFO     | app.core.middleware:log_requests:15 - Response: 200 - 0.0042s
+2025-06-04 14:09:38 | INFO     | app.core.middleware:log_requests:10 - Request: GET http://localhost:8000/openapi.json
+2025-06-04 14:09:39 | INFO     | app.core.middleware:log_requests:15 - Response: 200 - 0.7189s
+2025-06-04 14:09:58 | INFO     | app.core.middleware:log_requests:10 - Request: GET http://localhost:8000/docs?id=f12b9090-1d46-4f4f-9d51-b26bcbbd2d80&vscodeBrowserReqId=1749026398080
+2025-06-04 14:09:58 | INFO     | app.core.middleware:log_requests:15 - Response: 200 - 0.0000s
+2025-06-04 14:09:59 | INFO     | app.core.middleware:log_requests:10 - Request: GET http://localhost:8000/openapi.json
+2025-06-04 14:09:59 | INFO     | app.core.middleware:log_requests:15 - Response: 200 - 0.0020s
+2025-06-04 14:11:11 | INFO     | app.core.middleware:log_requests:10 - Request: GET http://localhost:8000/docs?id=f12b9090-1d46-4f4f-9d51-b26bcbbd2d80&vscodeBrowserReqId=1749026471120
+2025-06-04 14:11:11 | INFO     | app.core.middleware:log_requests:15 - Response: 200 - 0.0013s
+2025-06-04 14:11:11 | INFO     | app.core.middleware:log_requests:10 - Request: GET http://localhost:8000/openapi.json
+2025-06-04 14:11:11 | INFO     | app.core.middleware:log_requests:15 - Response: 200 - 0.0015s
+2025-06-04 14:11:31 | INFO     | app.main:shutdown_event:50 - Closing MongoDB connection...
+2025-06-04 14:11:31 | INFO     | app.main:shutdown_event:52 - MongoDB connection closed
+2025-06-04 14:13:08 | INFO     | app.main:startup_event:44 - Connecting to MongoDB...
+2025-06-04 14:13:10 | INFO     | app.main:startup_event:46 - Connected to MongoDB
+2025-06-04 14:13:10 | INFO     | app.main:shutdown_event:50 - Closing MongoDB connection...
+2025-06-04 14:13:10 | INFO     | app.main:shutdown_event:52 - MongoDB connection closed
+2025-06-04 14:13:14 | INFO     | app.main:startup_event:44 - Connecting to MongoDB...
+2025-06-04 14:13:14 | INFO     | app.main:startup_event:46 - Connected to MongoDB
+2025-06-04 14:13:51 | INFO     | app.main:shutdown_event:50 - Closing MongoDB connection...
+2025-06-04 14:13:51 | INFO     | app.main:shutdown_event:52 - MongoDB connection closed
+2025-06-04 14:14:16 | INFO     | app.main:startup_event:44 - Connecting to MongoDB...
+2025-06-04 14:14:16 | INFO     | app.main:startup_event:46 - Connected to MongoDB
+2025-06-04 15:02:40 | INFO     | app.main:shutdown_event:50 - Closing MongoDB connection...
+2025-06-04 15:02:40 | INFO     | app.main:shutdown_event:52 - MongoDB connection closed
+2025-06-04 15:03:02 | INFO     | app.main:startup_event:44 - Connecting to MongoDB...
+2025-06-04 15:03:02 | INFO     | app.main:startup_event:46 - Connected to MongoDB
+2025-06-04 15:04:14 | INFO     | app.main:shutdown_event:50 - Closing MongoDB connection...
+2025-06-04 15:04:14 | INFO     | app.main:shutdown_event:52 - MongoDB connection closed
+2025-06-04 15:04:20 | INFO     | app.main:startup_event:44 - Connecting to MongoDB...
+2025-06-04 15:04:21 | INFO     | app.main:startup_event:46 - Connected to MongoDB
+2025-06-04 15:04:34 | INFO     | app.core.middleware:log_requests:10 - Request: POST http://localhost:8000/api/v1/auth/auth/google
+2025-06-04 15:04:37 | ERROR    | app.api.v1.endpoints.auth:google_auth:118 - Invalid Google token: Wrong number of segments in token: b'string'
+2025-06-04 15:04:37 | INFO     | app.core.middleware:log_requests:15 - Response: 401 - 2.7101s
